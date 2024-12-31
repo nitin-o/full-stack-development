@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Structure and Syntax</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+<body>
+    <header>
+        <div class="logo">HTML Basics</div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>What is HTML Structure?</h2>
+            <p>The structure of an HTML document defines how its elements are organized. It consists of different sections, such as the <code>head</code> and <code>body</code>, which are required to organize and display content.</p>
+        </section>
+
+        <section>
+            <h2>Key Components of HTML Structure:</h2>
+            <ul>
+                <li><strong>DOCTYPE Declaration:</strong> This is the first line of an HTML document. It tells the web browser which version of HTML to expect.
+                    <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+                </li>
+                <li><strong>HTML Element:</strong> The root element that contains all the HTML content.
+                    <pre><code>&lt;html lang="en"&gt;&lt;/html&gt;</code></pre>
+                </li>
+                <li><strong>Head Element:</strong> Contains metadata about the document like the character set, page title, linked stylesheets, etc.
+                    <pre><code>&lt;head&gt;&lt;meta charset="UTF-8"&gt;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;&lt;title&gt;HTML Structure Example&lt;/title&gt;&lt;/head&gt;</code></pre>
+                </li>
+                <li><strong>Body Element:</strong> Contains all the visible content displayed on the web page, such as text, images, and links.
+                    <pre><code>&lt;body&gt;&lt;h1&gt;This is a Heading&lt;/h1&gt;&lt;p&gt;This is a paragraph of text.&lt;/p&gt;&lt;/body&gt;</code></pre>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Basic Syntax of HTML Tags</h2>
+            <p>HTML uses tags to structure and display content. Tags are enclosed in angle brackets (<code>&lt; &gt;</code>), and most tags come in pairs: an opening tag and a closing tag. For example:</p>
+            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            <p>Some HTML elements, like images, do not require a closing tag. These are called self-closing tags. For example:</p>
+            <pre><code>&lt;img src="image.jpg" alt="Sample Image"&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Common HTML Tags:</h2>
+            <ul>
+                <li><strong>Headings:</strong> HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. The <code>&lt;h1&gt;</code> tag represents the most important heading, and <code>&lt;h6&gt;</code> is the least important.
+                    <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;&lt;h2&gt;Subheading&lt;/h2&gt;</code></pre>
+                </li>
+                <li><strong>Paragraph:</strong> The <code>&lt;p&gt;</code> tag is used to define paragraphs.
+                    <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+                </li>
+                <li><strong>Anchor (Links):</strong> The <code>&lt;a&gt;</code> tag is used to create hyperlinks.
+                    <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+                </li>
+                <li><strong>Images:</strong> The <code>&lt;img&gt;</code> tag is used to embed images.
+                    <pre><code>&lt;img src="image.jpg" alt="Sample Image"&gt;</code></pre>
+                </li>
+                <li><strong>Lists:</strong> HTML supports two types of lists:
+                    <ul>
+                        <li><strong>Unordered List (<code>&lt;ul&gt;</code>):</strong>
+                            <pre><code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</code></pre>
+                        </li>
+                        <li><strong>Ordered List (<code>&lt;ol&gt;</code>):</strong>
+                            <pre><code>&lt;ol&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;/ol&gt;</code></pre>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Nested HTML Elements</h2>
+            <p>HTML elements can be nested inside other elements. For example, a list of items can be wrapped inside a <code>&lt;div&gt;</code>:</p>
+            <pre><code>&lt;div class="list-container"&gt;&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>HTML Comments</h2>
+            <p>You can add comments in HTML using <code>&lt;!-- --&gt;</code>. Comments are ignored by the browser and are used for documentation purposes.</p>
+            <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>Example of HTML Document Structure</h2>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;HTML Structure and Syntax&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Welcome to HTML Structure and Syntax&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;main&gt;
+            &lt;section&gt;
+                &lt;h2&gt;Introduction&lt;/h2&gt;
+                &lt;p&gt;HTML structure consists of several key components, including tags, elements, and attributes.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;section&gt;
+                &lt;h2&gt;Syntax Example&lt;/h2&gt;
+                &lt;p&gt;The syntax of HTML involves using tags to create the structure and content of a webpage.&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+            &lt;p&gt;&copy; 2024 HTML Learning&lt;/p&gt;
+        &lt;/footer&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Topics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Git Learning</div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card-container">
+            <!-- Card 1: Version Control with Git -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://via.placeholder.com/300x200" alt="Version Control with Git Image" class="card-img">
+                    <h2>Version Control with Git</h2>
+                    <p>Git is a distributed version control system used for tracking changes in source code during software development. It allows multiple developers to collaborate on a project while maintaining a complete history of changes, enabling versioning, branching, and reverting to earlier states of the code.</p>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/01Version_Control_with_Git/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+
+            <!-- Card 2: Git Workflows -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://via.placeholder.com/300x200" alt="Git Workflows Image" class="card-img">
+                    <h2>Git Workflows</h2>
+                    <p>Git workflows are strategies or frameworks used by development teams to collaborate effectively using Git. Common workflows include:</p>
+                    <ul>
+                        <li>Feature Branch Workflow: Developers work on feature-specific branches before merging them into the main branch.</li>
+                        <li>Gitflow Workflow: A more structured approach with dedicated branches for features, releases, and hotfixes.</li>
+                        <li>Forking Workflow: Often used in open-source projects where contributors fork the repository, make changes, and create pull requests.</li>
+                    </ul>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/02Git_Workflows/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+
+            <!-- Card 3: Resolving Merge Conflicts -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://via.placeholder.com/300x200" alt="Resolving Merge Conflicts Image" class="card-img">
+                    <h2>Resolving Merge Conflicts</h2>
+                    <p>Merge conflicts occur when changes in two branches cannot be automatically merged by Git. This typically happens when multiple contributors edit the same lines in a file. Resolving conflicts involves:</p>
+                    <ul>
+                        <li>Identifying the conflict in the affected file(s).</li>
+                        <li>Editing the file to retain the desired changes.</li>
+                        <li>Marking the conflict as resolved with the <code>git add</code> command.</li>
+                        <li>Completing the merge with <code>git commit</code>.</li>
+                    </ul>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/03Resolving_Merge_Conflicts/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+
+            <!-- Card 4: Git Tags and Versioning -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://via.placeholder.com/300x200" alt="Git Tags and Versioning Image" class="card-img">
+                    <h2>Git Tags and Versioning</h2>
+                    <p>Git tags are references that point to specific commits, often used for marking release points (e.g., <code>v1.0.0</code>). Tags are of two types:</p>
+                    <ul>
+                        <li>Lightweight Tags: Simple pointers to a commit.</li>
+                        <li>Annotated Tags: Contain additional metadata like a message, timestamp, and signature.</li>
+                    </ul>
+                    <p>Tags are commonly used in versioning to indicate stable releases and allow developers to reference specific versions of the codebase.</p>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/04Git_Tags_and_Versioning/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Git Learning. All rights reserved.</p>
+    </footer>
+</body>
+</html>

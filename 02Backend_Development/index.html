@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Topics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Node.js Learning</div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card-container">
+            <!-- Card 1: Basics of Node.js -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://via.placeholder.com/300x200" alt="Basics of Node.js Image" class="card-img">
+                    <h2>Basics of Node.js</h2>
+                    <p>Node.js is a cross-platform, open-source runtime environment that allows you to run JavaScript code outside of a browser. It is built on Google’s V8 JavaScript engine and is designed for developing scalable network applications. Node.js is event-driven, non-blocking, and well-suited for handling asynchronous operations efficiently.</p>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/01Basics_of_Node.js/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+
+            <!-- Card 2: Understanding Node.js Runtime -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://via.placeholder.com/300x200" alt="Understanding Node.js Runtime Image" class="card-img">
+                    <h2>Understanding Node.js Runtime</h2>
+                    <p>The Node.js runtime refers to the environment where JavaScript code executes. Unlike browsers, Node.js provides additional APIs such as `fs` (file system) and `http` to enable server-side scripting. It leverages the V8 engine for executing JavaScript and uses the libuv library for handling asynchronous I/O operations.</p>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/02Understanding_Node.js_Runtime/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+
+            <!-- Card 3: Creating a Simple Server -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://via.placeholder.com/300x200" alt="Creating a Simple Server Image" class="card-img">
+                    <h2>Creating a Simple Server</h2>
+                    <p>Creating a simple server in Node.js involves using the built-in `http` module to listen for incoming client requests and respond to them. A basic server can be created with just a few lines of code:</p>
+                    <pre><code>
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Hello, world!');
+});
+
+server.listen(3000, () => {
+    console.log('Server running on http://localhost:3000');
+});
+                    </code></pre>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/03Creating_a_Simple_Server/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+
+            <!-- Card 4: Understanding Event-Driven Architecture -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://via.placeholder.com/300x200" alt="Understanding Event-Driven Architecture Image" class="card-img">
+                    <h2>Understanding Event-Driven Architecture</h2>
+                    <p>Node.js operates on an event-driven architecture where an event loop continuously listens for and processes events such as HTTP requests, database queries, or file operations. Instead of waiting for a task to complete, Node.js registers callbacks for events and moves on to the next task. This approach ensures high performance and scalability by minimizing blocking operations.</p>
+                    <p>Example:</p>
+                    <pre><code>
+const fs = require('fs');
+
+fs.readFile('example.txt', 'utf-8', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+});
+
+console.log('Reading file...');
+                    </code></pre>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/04Understanding_Event-Driven_Architecture/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Node.js Learning. All rights reserved.</p>
+    </footer>
+</body>
+</html>

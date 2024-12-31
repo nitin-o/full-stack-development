@@ -7,41 +7,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">My Website</div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="card-container">
-        <!-- Frontend Development Card -->
-        <div class="card">
-            <img src="https://img.freepik.com/free-vector/landing-page-website-setup-concept_52683-25724.jpg?semt=ais_hybrid" alt="Frontend Development Image" class="card-img">
-            <h2>Frontend Development</h2>
-            <p>Frontend development involves building the user interface (UI) and user experience (UX) of a website or web application. It focuses on everything that users see and interact with on their screens. This includes designing and coding elements such as buttons, navigation bars, and other interactive features using technologies like HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.js.</p>
-            <a href="/01Frontend%20Development/index.html" class="btn">Go Next</a>
+    <main>
+        <div class="card-container">
+            <!-- Frontend Development Card -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://img.freepik.com/free-vector/landing-page-website-setup-concept_52683-25724.jpg?semt=ais_hybrid" alt="Frontend Development Image" class="card-img">
+                    <h2>Frontend Development</h2>
+                    <p>Frontend development involves building the user interface (UI) and user experience (UX) of a website or web application. It focuses on everything that users see and interact with on their screens. This includes designing and coding elements such as buttons, navigation bars, and other interactive features using technologies like HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.js.</p>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/01Frontend%20Development/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+
+            <!-- Backend Development Card -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://img.freepik.com/premium-photo/web-development-coding-programming-internet-technology-business-concept_628331-833.jpg?w=1800" alt="Backend Development Image" class="card-img">
+                    <h2>Backend Development</h2>
+                    <p>Backend development is concerned with the server-side of a web application. It focuses on the logic, database management, server configuration, and application architecture that powers the frontend. Backend developers work with programming languages like Python, Java, PHP, Ruby, and Node.js, as well as databases such as MySQL, PostgreSQL, or MongoDB. They ensure that data is properly handled, processed, and sent to the frontend.</p>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/02Backend%20Development/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+
+            <!-- DevOps and Deployment Card -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://img.freepik.com/free-vector/flat-design-technology-devops-illustration_23-2149356401.jpg?t=st=1735637763~exp=1735641363~hmac=f5fa6cae605b4f9f8261ff8bdb23f84c0fc06be4c960fe687f94da441f9a582d&w=1800" alt="DevOps and Deployment Image" class="card-img">
+                    <h2>DevOps and Deployment</h2>
+                    <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the systems development life cycle. It aims to improve the collaboration between development teams and operations teams to deliver high-quality software faster and more efficiently. Deployment refers to the process of transferring code from the development environment to a live production environment, ensuring that the application runs smoothly, is monitored, and is scalable. Common tools used in DevOps include Docker, Kubernetes, Jenkins, and CI/CD pipelines.</p>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/03DevOps%20and%20Deployment/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
+
+            <!-- Testing and Debugging Card -->
+            <div class="card">
+                <div class="card-content">
+                    <img src="https://img.freepik.com/premium-photo/team-developers-debugging-software-bug-computer-screen-vector-art_1198884-60320.jpg?w=1480" alt="Testing and Debugging Image" class="card-img">
+                    <h2>Testing and Debugging</h2>
+                    <p>Testing and debugging are critical processes in software development. Testing involves writing and running test cases to ensure that the code functions as expected, identifying issues before the software is released. Types of testing include unit testing, integration testing, and user acceptance testing (UAT). Debugging is the process of identifying and fixing bugs (errors) in the code. It involves analyzing code, identifying problematic areas, and using tools like IDE debuggers to correct issues and optimize performance.</p>
+                </div>
+                <div class="inner-card-button">
+                    <a href="/04Testing%20and%20Debugging/index.html" class="btn">Go Next</a>
+                </div>
+            </div>
         </div>
+    </main>
 
-        <!-- Backend Development Card -->
-        <div class="card">
-            <img src="https://img.freepik.com/premium-photo/web-development-coding-programming-internet-technology-business-concept_628331-833.jpg?w=1800" alt="Backend Development Image" class="card-img">
-            <h2>Backend Development</h2>
-            <p>Backend development is concerned with the server-side of a web application. It focuses on the logic, database management, server configuration, and application architecture that powers the frontend. Backend developers work with programming languages like Python, Java, PHP, Ruby, and Node.js, as well as databases such as MySQL, PostgreSQL, or MongoDB. They ensure that data is properly handled, processed, and sent to the frontend.</p>
-            <a href="02Backend%20Development/index.html" class="btn">Go Next</a>
-        </div>
-
-        <!-- DevOps and Deployment Card -->
-        <div class="card">
-            <img src="https://img.freepik.com/free-vector/flat-design-technology-devops-illustration_23-2149356401.jpg?t=st=1735637763~exp=1735641363~hmac=f5fa6cae605b4f9f8261ff8bdb23f84c0fc06be4c960fe687f94da441f9a582d&w=1800" alt="DevOps and Deployment Image" class="card-img">
-            <h2>DevOps and Deployment</h2>
-            <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to shorten the systems development life cycle. It aims to improve the collaboration between development teams and operations teams to deliver high-quality software faster and more efficiently. Deployment refers to the process of transferring code from the development environment to a live production environment, ensuring that the application runs smoothly, is monitored, and is scalable. Common tools used in DevOps include Docker, Kubernetes, Jenkins, and CI/CD pipelines.</p>
-            <a href="/03DevOps%20and%20Deployment/index.html" class="btn">Go Next</a>
-        </div>
-
-        <!-- Testing and Debugging Card -->
-        <div class="card">
-            <img src="https://img.freepik.com/premium-photo/team-developers-debugging-software-bug-computer-screen-vector-art_1198884-60320.jpg?w=1480" alt="Testing and Debugging Image" class="card-img">
-            <h2>Testing and Debugging</h2>
-            <p>Testing and debugging are critical processes in software development. Testing involves writing and running test cases to ensure that the code functions as expected, identifying issues before the software is released. Types of testing include unit testing, integration testing, and user acceptance testing (UAT). Debugging is the process of identifying and fixing bugs (errors) in the code. It involves analyzing code, identifying problematic areas, and using tools like IDE debuggers to correct issues and optimize performance.</p>
-            <a href="/04Testing%20and%20Debugging/index.html" class="btn">Go Next</a>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
